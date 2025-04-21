@@ -4,11 +4,11 @@ init python:
     style.narrator_dialogue.xalign = 0.5
     style.narrator_dialogue.text_align = 0.5
 
-# Стиль диалогового окна
+# Стиль диалогового окна 
 style window:
     ypos 1080
     xsize 2000
-    ysize 220
+    ysize 240
     background Frame("gui/textbox.png", 25, 25)
 
 # Персонажи
@@ -41,7 +41,7 @@ transform right_side:
     yalign 1.0
 
 # Начало игры
-label start:
+label chapter1_start:
     # Вступление
     scene black_back
     show text "Глава 1: Обычный день Нурика" at truecenter with fade
@@ -53,7 +53,7 @@ label start:
     call chapter1_college_choice # from _call_chapter1_college_choice
     
     jump chapter2_start
-    
+
     return
 
 # Сцена в автобусе

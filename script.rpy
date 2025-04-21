@@ -7,9 +7,11 @@ define N = Character('Нурик', image="nurik")
 # Общие изображения и трансформы
 image black_back = "#000000"
 
+
 label start:
     # Запуск первой главы
     jump chapter1_start
+
 
 label game_over:
     # Общий экран завершения
