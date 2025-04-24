@@ -12,6 +12,8 @@ label start:
     # Запуск первой главы
     jump chapter1_start
 
+    jump chapter1_start
+
 
 label game_over:
     # Общий экран завершения
