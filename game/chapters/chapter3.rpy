@@ -20,16 +20,18 @@ define narrator = Character(
     what_style="narrator_dialogue"
 )
 
-define l = Character('Леша', color="#c8ffc8", what_slow_cps=20, window_style="window")
+define Kov = Character('Елизавета Александровна' , color="#807adb", what_slow_cps=20, window_style="window")
 define bus = Character('Автоинформатор', color="#c8ffc8", what_slow_cps=20, window_style="window")
 define N = Character('Нурик', image="nurik", what_slow_cps=20, window_style="window")
 
 # Изображения
 image kab_104 = "bg/lesson_kovaleva/kbinet.png"
 image blue_screen104 = "bg/lesson_kovaleva/blue_screen.png"
-image lesha = "characters/lesha.png"
 image nurik = "characters/nurik.png"
 image black_back = "#000000"
+image kovaleva = Transform("characters/kovaleva.png", zoom=0.66)
+image compilator = "bg/lesson_kovaleva/compilator.png"
+image game104back = "bg/lesson_kovaleva/workCode.png"
 
 # Трансформы
 transform left_side:
@@ -49,6 +51,8 @@ label chapter3_start:
     
     # Контент главы 3...
     call before_game_104
+    call game_104
+    call aftergame_104
     # Завершение игры
     jump game_over
 
@@ -75,5 +79,133 @@ label before_game_104:
     
     narrator "Это расстраивает его настолько, что он думает о побеге с пар." (what_slow_cps=25)
 
+    narrator "Но пока что ему нужно пересесть за компьютер и сделать практическую. К сожалению, даже Visial Studio не выдержала и сбежала с компьютеров колледжа." (what_slow_cps=25)
+
+    scene compilator:
+        fit "contain"
+        
+    show nurik at left_side with hpunch
+
+    N "Ну, а конспект я писать конечно же не буду. Всё же можно распечатать." (what_slow_cps=25)
+
+    narrator "Нурик открывает онлайн компилятор. Как жаль, что здесь нет рекламы айкью тестов." (what_slow_cps=25)
+
+  
+    scene black_back with fade
+    pause 1
     
+    scene kab_104 with fade:
+        fit "contain"
+    show kovaleva at right_side with dissolve
+    # linear 3.0 xpos 0 ypos 100
+    Kov  "..A сейчас я вырублю рубильник… Кто не успел сохранить работу – тот сам виноват." (what_slow_cps=25)
+    narrator "Откуда-то раздается тревожная музыка… Елизавета Александровна медленно направляется к машине для убийства нервных клеток."
+    return
+
+label game_104:
+    scene game104back with fade:
+        fit "contain"
+    narrator "Нурик судорожно хватает мышку. Придется сохранять работу в блокнот"
+    # Настройки игры
+    $ total_rounds = 7               # Всего кнопок
+    $ time_per_round = 2          # Время на реакцию в сек
+    $ current_round = 1              
+    $ game_success = False           
+
+    
+    $ x_min = 0.1
+    $ x_max = 0.9
+    $ y_min = 0.2
+    $ y_max = 0.7
+
+    # Запуск игры
+    call screen button_chase_game
+
+    # Проверка результата
+    if game_success:
+        jump saved
+    else:
+        jump time_up
+
+screen button_chase_game():
+    # Показываем новую кнопку 
+    timer 0.9 repeat True action If(
+        current_round <= total_rounds,
+        [SetVariable("clicked", False), Show("button_chase")],
+        [SetVariable("game_success", True), Hide("button_chase"), Return()]
+    )
+
+screen button_chase():
+    # Координаты 
+    $ x_pos = renpy.random.uniform(x_min, x_max)
+    $ y_pos = renpy.random.uniform(y_min, y_max)
+
+    # Таймер исчезновения кнопки
+    timer time_per_round action [
+        If(not clicked, [Hide("button_chase"), SetVariable("current_round", total_rounds + 1), Return()])
+    ]
+
+    # кнопка 
+    button:
+        xpos x_pos
+        ypos y_pos
+        xanchor 0.5
+        yanchor 0.5
+        at button_appear
+        background Solid("#404040")
+        padding (25, 15)
+        action [
+            SetVariable("clicked", True),
+            Hide("button_chase"),
+            SetVariable("current_round", current_round + 1),
+            
+        ]
+
+        text "Сохранить!":
+            size 30
+            color "#FFFFFF"
+
+    # раунд сверху налпсиь
+    vbox:
+        xalign 0.5
+        ypos 50
+        text "Раунд: [current_round]/[total_rounds]":
+            size 30
+            color "#FFFFFF"
+
+#поялвление кнопки
+transform button_appear:
+    alpha 0.0
+    linear 0.3 alpha 1.0  
+
+label time_up:
+    narrator "О нет! Нурик забыл сохранить работу."
+    scene black_back
+    narrator "Он долго ругается на свою забывчивость, но все же приступает к работе заново."
+    # здесь минус репутация вайб аура счастье идк!!!!!!!
+    return
+
+label saved:
+    narrator "Ура! Работа сохранена и в полной безопасности. Осталось только защитить её и уйти."
+    return
+
+
+label aftergame_104:
+    scene kab_104 with fade:
+        fit "contain"
+    show nurik at left_side with hpunch
+    N "Я готов сдавать!" (what_slow_cps=25)
+    narrator "Или сдаваться." (what_slow_cps=25)
+    narrator "Елизавета Александровна подходит к нему." (what_slow_cps=25)
+    show kovaleva at right_side with dissolve
+    Kov "А где конспект?" (what_slow_cps=25)
+    show nurik at left_side with hpunch
+    N "Ну.." (what_slow_cps=25)
+    narrator "К неудаче, Нурик принял решение быть не таким как все. Лучше бы он слился с обществом." (what_slow_cps=25)
+    Kov "Ну вот как напишешь – тогда и защитишь." (what_slow_cps=25)
+    hide kovaleva
+    narrator "Двойная печаль! Потому что как только он пересиливает себя, готовый написать конспект, пара заканчивается." (what_slow_cps=25)
+    narrator "В голову Нурика приходит замечательная идея, которая моментально поднимает ему настроение." (what_slow_cps=25)
+    show nurik at left_side with hpunch
+    N "Лучше чистить фары, чем сидеть 4 пары." (what_slow_cps=25)
     return
