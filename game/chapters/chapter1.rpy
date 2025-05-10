@@ -42,12 +42,16 @@ transform right_side:
 
 # Начало игры
 label chapter1_start:
+   
+   
     # Вступление
     scene black_back
     show text "Глава 1: Обычный день Нурика" at truecenter with fade
     pause 1.5
     hide text with fade
 
+    
+  
     # Основной сюжет
     call chapter1_bus_scene # from _call_chapter1_bus_scene
     call chapter1_college_choice # from _call_chapter1_college_choice
@@ -89,7 +93,8 @@ label chapter1_college_choice:
 
     narrator "Нурик оглядывается на посеревшее здание, затем на яркие, красочные билборды торгового центра."
     narrator "Хороший маркетинг - важная составляющая мотивации."
-
+    
+   
     menu:
         "Свальсировать с пар в Каширскую плазу.":
             jump chapter1_shopping_ending

@@ -1,28 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/chapters/chapter3.rpy", line 54, in script call
-    call game_104
-  File "game/chapters/chapter3.rpy", line 201, in script
-    kovaleva "А где конспект?" (what_slow_cps=25)
-Exception: Sayer 'kovaleva' is not defined.
+  File "game/chapters/peremena3.rpy", line 50, in script call
+    call peremena3_go
+  File "game/chapters/peremena3.rpy", line 57, in script
+    $ show_achievement("odin")
+  File "game/chapters/peremena3.rpy", line 57, in <module>
+    $ show_achievement("odin")
+NameError: name 'show_achievement' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapters/chapter3.rpy", line 54, in script call
-    call game_104
-  File "game/chapters/chapter3.rpy", line 201, in script
-    kovaleva "А где конспект?" (what_slow_cps=25)
-  File "C:\Users\zhuma\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
-    Say.execute(self)
-  File "C:\Users\zhuma\renpy-8.3.7-sdk\renpy\ast.py", line 583, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\zhuma\renpy-8.3.7-sdk\renpy\ast.py", line 472, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'kovaleva' is not defined.
+  File "game/chapters/peremena3.rpy", line 50, in script call
+    call peremena3_go
+  File "game/chapters/peremena3.rpy", line 57, in script
+    $ show_achievement("odin")
+  File "C:\Users\zhuma\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\zhuma\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/chapters/peremena3.rpy", line 57, in <module>
+    $ show_achievement("odin")
+NameError: name 'show_achievement' is not defined
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.7.25031702
 test 1.0
-Sun May  4 14:19:03 2025
+Sat May 10 12:44:03 2025

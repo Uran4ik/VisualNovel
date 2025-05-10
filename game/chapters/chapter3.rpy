@@ -29,7 +29,9 @@ image kab_104 = "bg/lesson_kovaleva/kbinet.png"
 image blue_screen104 = "bg/lesson_kovaleva/blue_screen.png"
 image nurik = "characters/nurik.png"
 image black_back = "#000000"
-image kovaleva = Transform("characters/kovaleva.png", zoom=0.66)
+image kovaleva = Transform("characters/kovaleva.png", zoom=0.3)
+image kovaleva_rk = Transform("characters/kovaleva_rk.png", zoom=0.18)
+image kovaleva_cool = Transform("characters/kovaleva_cool.png", zoom=0.18)
 image compilator = "bg/lesson_kovaleva/compilator.png"
 image game104back = "bg/lesson_kovaleva/workCode.png"
 
@@ -54,7 +56,7 @@ label chapter3_start:
     call game_104
     call aftergame_104
     # Завершение игры
-    jump game_over
+    jump peremena3_start
 
 
 label before_game_104: 
@@ -96,7 +98,7 @@ label before_game_104:
     
     scene kab_104 with fade:
         fit "contain"
-    show kovaleva at right_side with dissolve
+    show kovaleva_rk at right_side with dissolve
     # linear 3.0 xpos 0 ypos 100
     Kov  "..A сейчас я вырублю рубильник… Кто не успел сохранить работу – тот сам виноват." (what_slow_cps=25)
     narrator "Откуда-то раздается тревожная музыка… Елизавета Александровна медленно направляется к машине для убийства нервных клеток."
@@ -180,8 +182,10 @@ transform button_appear:
 
 label time_up:
     narrator "О нет! Нурик забыл сохранить работу."
+    show kovaleva_cool at right_side with dissolve
+    Kov "Надо было сохранять." (what_slow_cps=25)
     scene black_back
-    narrator "Он долго ругается на свою забывчивость, но все же приступает к работе заново."
+    narrator "Нурик долго ругается на свою забывчивость, но все же приступает к работе заново."
     # здесь минус репутация вайб аура счастье идк!!!!!!!
     return
 
@@ -197,7 +201,7 @@ label aftergame_104:
     N "Я готов сдавать!" (what_slow_cps=25)
     narrator "Или сдаваться." (what_slow_cps=25)
     narrator "Елизавета Александровна подходит к нему." (what_slow_cps=25)
-    show kovaleva at right_side with dissolve
+    show kovaleva_rk at right_side with dissolve
     Kov "А где конспект?" (what_slow_cps=25)
     show nurik at left_side with hpunch
     N "Ну.." (what_slow_cps=25)
