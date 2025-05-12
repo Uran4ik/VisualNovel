@@ -27,6 +27,7 @@ define narrator = Character(
 define l = Character('Леша', color="#c8ffc8", what_slow_cps=20, window_style="window")
 define bus = Character('Автоинформатор', color="#c8ffc8", what_slow_cps=20, window_style="window")
 define N = Character('Нурик', image="nurik", what_slow_cps=20, window_style="window")
+define lar = Character()
 
 # Изображения
 image kp_or_colledge = "bg/kp4.png"
@@ -34,6 +35,7 @@ image kp_or_colledge2 = "bg/lool.png"
 image lesha = "characters/lesha.png"
 image nurik = "characters/nurik.png"
 image black_back = "#000000"
+image lar_bejit = "characters/larionov_bejit.png"
 
 # Трансформы
 transform left_side:
@@ -43,6 +45,12 @@ transform left_side:
 transform right_side:
     xalign 0.95
     yalign 1.0
+
+transform move_rapidly:
+    xpos 1.2
+    yalign 1.0
+    linear 1.5 xpos -0.2
+
 
 # Начало игры
 label chapter1_start:
@@ -125,7 +133,11 @@ label chapter1_college_ending:
     narrator "Совесть взяла свое." (what_slow_cps=30)
     narrator "Не спеша, уже и так опаздывая, Нурик идет к входу, созерцая вид вновь перекладываемого асфальта." (what_slow_cps=30)
     narrator "Ух Собянин, ух молодец!" (what_slow_cps=30)
+
+    # Показываем изображение и анимацию Ларионова
+    show lar_bejit at move_rapidly
     narrator "Вдруг, мимо быстро, почти незаметно из-за своей скорости, проходит Дмитрий Ильич Ларионов." (what_slow_cps=30)
+    hide lar_bejit
 
     show nurik at left_side with hpunch
     N "Здра..." (what_slow_cps=25) 
@@ -136,7 +148,7 @@ label chapter1_college_ending:
     show nurik at left_side with hpunch
     N "окак! Надо было сдавать фласку на первом курсе." (what_slow_cps=30)
     hide nurik with dissolve
-    
+
     # Эффект затемнения экрана
     scene black_back with fade
     pause 1.0
