@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapters/achievement.rpy", line 63: 'color' is not a keyword argument or valid child of the vbox statement.
-    color "#000000"
-         ^
+File "game/chapters/peremena3.rpy", line 76: show statement expects a non-empty block.
+    show nurik at left_side:
+                            ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat May 10 15:22:52 2025
+Sat May 10 18:43:21 2025
