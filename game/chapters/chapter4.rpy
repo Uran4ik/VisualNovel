@@ -1,10 +1,10 @@
-label chapter3_start:
+label chapter4_start:
     scene black_back
-    show text "Глава 3: Кульминация" at truecenter with fade
+    show text "Глава 4: БАЛБАЛБАЛ" at truecenter with fade
     pause 1.5
     hide text with fade
     
     # Контент главы 3...
     
     # Завершение игры
-    jump chapter4_start
+    jump chapter5_start
