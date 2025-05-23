@@ -7,4 +7,4 @@ label chapter3_start:
     # Контент главы 3...
     
     # Завершение игры
-    jump game_over
+    jump chapter4_start

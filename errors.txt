@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/chapters/chapter4.rpy", line 32: expected '=' not found.
+    image larionov at center:
+                   ^
+
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Thu May 22 01:08:38 2025

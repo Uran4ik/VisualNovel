@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/chapters/chapter4.rpy", line 30, in script
+    image nurik = im.Scale("characters/nurik.png")  # Уменьшил Нурика
+  File "game/chapters/chapter4.rpy", line 30, in <module>
+    image nurik = im.Scale("characters/nurik.png")  # Уменьшил Нурика
+TypeError: __init__() missing 2 required positional arguments: 'width' and 'height'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/chapters/chapter4.rpy", line 30, in script
+    image nurik = im.Scale("characters/nurik.png")  # Уменьшил Нурика
+  File "D:\renpy-8.3.7-sdk\renpy\ast.py", line 933, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "D:\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/chapters/chapter4.rpy", line 30, in <module>
+    image nurik = im.Scale("characters/nurik.png")  # Уменьшил Нурика
+TypeError: __init__() missing 2 required positional arguments: 'width' and 'height'
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.7.25031702
+test 1.0
+Thu May 22 23:57:57 2025
