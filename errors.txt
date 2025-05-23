@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/chapters/chapter5.rpy", line 13: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    tint 1.0 0.5 0.5
-             ^
+File "game/chapters/chapter5.rpy", line 264: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Wed May 14 12:31:23 2025
+Fri May 23 10:15:13 2025

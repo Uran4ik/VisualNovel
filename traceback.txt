@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/chapters/chapter1.rpy", line 57, in script call
-    call chapter1_college_choice
-  File "game/chapters/chapter5.rpy", line 35, in script
-    smirnov "Так… Что такое первая нормальная форма?" (what_slow_cps=25)
-Exception: Sayer 'smirnov' is not defined.
+  File "game/chapters/chapter5.rpy", line 318, in script
+    jump chapter6_start
+ScriptError: could not find label 'chapter6_start'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapters/chapter1.rpy", line 57, in script call
-    call chapter1_college_choice
-  File "game/chapters/chapter5.rpy", line 35, in script
-    smirnov "Так… Что такое первая нормальная форма?" (what_slow_cps=25)
-  File "C:\Users\Nurmuhammed\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
-    Say.execute(self)
-  File "C:\Users\Nurmuhammed\renpy-8.3.7-sdk\renpy\ast.py", line 583, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Nurmuhammed\renpy-8.3.7-sdk\renpy\ast.py", line 472, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'smirnov' is not defined.
+  File "game/chapters/chapter5.rpy", line 318, in script
+    jump chapter6_start
+  File "C:\Users\Nurmuhammed\renpy-8.3.7-sdk\renpy\ast.py", line 1712, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\Nurmuhammed\renpy-8.3.7-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'chapter6_start'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.7.25031702
 test 1.0
-Wed May 14 11:32:39 2025
+Fri May 23 10:19:05 2025

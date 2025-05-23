@@ -35,7 +35,7 @@ define N = Character('Нурик', image="nurik", what_slow_cps=20, window_style
 # --- Изображения ---
 image kp_or_colledge = "bg/kp4.png"
 image kp_or_colledge2 = "bg/lool.png"
-image lesha = "characters/lesha.png"
+image lesha = "characters/image.png"
 image nurik = "characters/nurik.png"
 image lar_bejit = "characters/larionov_bejit.png"
 image black_back = "#000000"
