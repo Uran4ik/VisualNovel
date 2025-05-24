@@ -1,0 +1,12 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+The label para1_start is defined twice, at File "game/chapters/para1.rpy", line 54:
+label para1_start:
+and File "game/chapters/peremena1_start.rpy", line 48:
+label para1_start:
+
+
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Sat May 10 17:40:44 2025

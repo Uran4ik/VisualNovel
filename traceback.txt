@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:\\Users\\HP\\AppData\\Roaming/RenPy/test-1743860747/sync\\persistent'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\HP\Downloads\renpy-8.3.7-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\HP\Downloads\renpy-8.3.7-sdk\renpy\main.py", line 666, in main
+    renpy.persistent.update(True)
+  File "C:\Users\HP\Downloads\renpy-8.3.7-sdk\renpy\persistent.py", line 434, in update
+    save()
+  File "C:\Users\HP\Downloads\renpy-8.3.7-sdk\renpy\persistent.py", line 456, in save
+    renpy.loadsave.location.save_persistent(compressed)
+  File "C:\Users\HP\Downloads\renpy-8.3.7-sdk\renpy\savelocation.py", line 622, in save_persistent
+    l.save_persistent(data)
+  File "C:\Users\HP\Downloads\renpy-8.3.7-sdk\renpy\savelocation.py", line 430, in save_persistent
+    safe_rename(fn_new, fn)
+  File "C:\Users\HP\Downloads\renpy-8.3.7-sdk\renpy\loadsave.py", line 303, in safe_rename
+    os.unlink(new)
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:\\Users\\HP\\AppData\\Roaming/RenPy/test-1743860747/sync\\persistent'
+
+Windows-10-10.0.22623 AMD64
+Ren'Py 8.3.7.25031702
+test 1.0
+Sat May 10 17:54:14 2025

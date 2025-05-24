@@ -147,4 +147,4 @@ label chapter1_college_ending:
     hide text with dissolve
     pause 0.5
 
-    jump chapter2_start
+    jump para1_start
