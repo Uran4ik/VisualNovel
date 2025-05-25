@@ -60,7 +60,7 @@ init python:
                 temp = oN[i]
                 oN[i] = ""
                 oLen += 1
-                renpy.play("sounds/click.mp3", channel="sound")
+                renpy.play("audio/savepoint.mp3", channel="sound")
                 renpy.restart_interaction()
                 if needTimer:
                     if oLen >= maxLen:
@@ -90,7 +90,7 @@ screen game:
 label chapter2_start:
     scene black_back
     play sound "undertale.mp3"
-    show text "{color=#ffffff}Глава 3: Кульминация{/color}" at truecenter with dissolve
+    show text "{color=#ffffff}Глава 2: Кульминация{/color}" at truecenter with dissolve
 
     pause 3.0
 
