@@ -85,7 +85,7 @@ screen game:
                     action [oClick(i), Return()]
                 else:
                     action []
-                    
+
 
 transform left_side:
     xalign 0.05
@@ -194,7 +194,7 @@ label chapter2_start:
     hide handly with dissolve
     show nurik at left_side with moveinleft
 
-    narrator "Найдя ручку Нурик открыл закрыл."(what_slow_cps=40)
+    narrator "Найдя ручку Нурик закрыл окно."(what_slow_cps=40)
 
     scene em kab1
 
