@@ -85,6 +85,15 @@ screen game:
                     action [oClick(i), Return()]
                 else:
                     action []
+                    
+
+transform left_side:
+    xalign 0.05
+    yalign 1.16
+
+transform right_side:
+    xalign 0.95
+    yalign 1.0
 
 
 label chapter2_start:
@@ -116,7 +125,7 @@ label chapter2_start:
 
     scene em kab2 with dissolve
 
-    show nurik at right with moveinright
+    show nurik at right_side with moveinright
 
     narrator "Нурик садится за свое место и открывает ноутбук."(what_slow_cps=40)
     narrator "Никто бы не мог подумать, но оказывается, тесты на айкью слишком энергозатратны."(what_slow_cps=40)
@@ -135,7 +144,7 @@ label chapter2_start:
 
     hide emel with dissolve
 
-    show nurik at left with moveinleft
+    show nurik at left_side with moveinleft
 
     narrator "Гул недовольства охватывает аудиторию."(what_slow_cps=40)
     narrator "Вторая пара тоже еще слишком рано для настоящей работы. К тому же, в аудитории душно."(what_slow_cps=40)
@@ -157,7 +166,7 @@ label chapter2_start:
     N "Я нашёл ручку"
 
     hide handly with dissolve
-    show nurik at left with moveinleft
+    show nurik at left_side with moveinleft
 
     narrator "Найдя ручку Нурик открыл окно."(what_slow_cps=40)
     narrator "Погода на улице хорошая. Прохлада наполняет кабинет и даже работать становится легче."(what_slow_cps=40)
@@ -170,7 +179,7 @@ label chapter2_start:
     narrator "Как обычно, нелегкая доля выпадает Нурику. Ну, по крайней мере сейчас то ручку искать не придется."(what_slow_cps=40)
     narrator "Кто-то явно согласен с общепринятой точкой зрения, потому что ручка вновь пропала."(what_slow_cps=40)
 
-    show polina photo at right with moveinright
+    show polina photo at right_side with moveinright
     
     polina "Домовой-домовой, поиграл и отдай."(what_slow_cps=40)
 
@@ -183,7 +192,7 @@ label chapter2_start:
     show handly with dissolve
     N "Я нашёл ручку"
     hide handly with dissolve
-    show nurik at left with moveinleft
+    show nurik at left_side with moveinleft
 
     narrator "Найдя ручку Нурик открыл закрыл."(what_slow_cps=40)
 
@@ -191,7 +200,7 @@ label chapter2_start:
 
     narrator "Голодные студентики слезно умоляют Елену Ивановну отпустить их пораньше в столовую."(what_slow_cps=40)
 
-    show emel at right with moveinright
+    show emel at right_side with moveinright
 
     emelina "Ну ладно, идите… Так вот, в Калязине очень интересно посмотреть на-"(what_slow_cps=40)
 
