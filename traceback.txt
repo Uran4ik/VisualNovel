@@ -1,0 +1,49 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/chapters/chapter1.rpy", line 52, in script call
+    call chapter1_college_choice
+  File "game/chapters/chapter4_peremena.rpy", line 81, in script call
+    call maze_game
+  File "game/chapters/chapter4_peremena.rpy", line 238, in script
+    "Нурик нашел выход из лабиринта за [maze.steps] шагов!"
+NameError: name 'maze' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/chapters/chapter1.rpy", line 52, in script call
+    call chapter1_college_choice
+  File "game/chapters/chapter4_peremena.rpy", line 81, in script call
+    call maze_game
+  File "game/chapters/chapter4_peremena.rpy", line 238, in script
+    "Нурик нашел выход из лабиринта за [maze.steps] шагов!"
+  File "D:\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "D:\renpy-8.3.7-sdk\renpy\ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\renpy-8.3.7-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "D:\renpy-8.3.7-sdk\renpy\character.py", line 1456, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\renpy-8.3.7-sdk\renpy\character.py", line 1369, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\renpy-8.3.7-sdk\renpy\character.py", line 1349, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\renpy-8.3.7-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "D:\renpy-8.3.7-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\renpy-8.3.7-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 'maze' is not defined
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.7.25031702
+test 1.0
+Mon May 26 09:11:45 2025
