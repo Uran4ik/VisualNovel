@@ -28,6 +28,7 @@ define N = Character('Нурик', image="nurik", what_slow_cps=20, window_style
 image kab_104 = "bg/lesson_kovaleva/kbinet.png"
 image blue_screen104 = "bg/lesson_kovaleva/blue_screen.png"
 image nurik = "characters/nurik.png"
+image nurik_cool = Transform( "characters/nurik_cool.png", zoom = 1.08)
 image black_back = "#000000"
 image kovaleva = Transform("characters/kovaleva.png", zoom=0.3)
 image kovaleva_rk = Transform("characters/kovaleva_rk.png", zoom=0.18)
@@ -46,8 +47,9 @@ transform right_side:
 
 
 label chapter3_start:
+    play sound undertale
     scene black_back
-    show text "Глава 3: Кульминация" at truecenter with fade
+    show text "Пара 3" at truecenter with fade
     pause 1.5
     hide text with fade
     
@@ -75,9 +77,9 @@ label before_game_104:
     scene blue_screen104 with fade:
         fit "contain"
 
-    show nurik at left_side with hpunch
+    show nurik_sad at left_side1
     N "(язык хэштегов), о нет, моя винда! Мой майнкрафт! Все пропало!" (what_slow_cps=30)
-    hide nurik with dissolve
+    hide nurik_sad with dissolve
     
     narrator "Это расстраивает его настолько, что он думает о побеге с пар." (what_slow_cps=25)
 
@@ -86,7 +88,7 @@ label before_game_104:
     scene compilator:
         fit "contain"
         
-    show nurik at left_side with hpunch
+    show nurik_cool at left_side1
 
     N "Ну, а конспект я писать конечно же не буду. Всё же можно распечатать." (what_slow_cps=25)
 
@@ -190,9 +192,11 @@ label time_up:
     scene black_back
     narrator "Нурик долго ругается на свою забывчивость, но все же приступает к работе заново." (what_slow_cps=25)
     # здесь минус репутация вайб аура счастье идк!!!!!!!
+    $ rep -= 1
     return
 
 label saved:
+    $ rep += 1
     narrator "Ура! Работа сохранена и в полной безопасности. Осталось только защитить её и уйти." (what_slow_cps=25)
     return
 
@@ -200,7 +204,7 @@ label saved:
 label aftergame_104:
     scene kab_104 with fade:
         fit "contain"
-    show nurik at left_side with hpunch
+    show nurik at left_side1
     N "Я готов сдавать!" (what_slow_cps=25)
     narrator "Или сдаваться." (what_slow_cps=25)
     narrator "Елизавета Александровна подходит к нему." (what_slow_cps=25)
@@ -213,7 +217,9 @@ label aftergame_104:
     hide kovaleva_rk with dissolve
     narrator "Двойная печаль! Потому что как только он пересиливает себя, готовый написать конспект, пара заканчивается." (what_slow_cps=25)
     narrator "В голову Нурика приходит замечательная идея, которая моментально поднимает ему настроение." (what_slow_cps=25)
-    
+    hide nurik
+    show nurik_cool at left_side1 with dissolve
     N "Лучше чистить фары, чем сидеть 4 пары." (what_slow_cps=25)
+    play sound "xbox.mp3"
     $ renpy.call_screen("scr_achievement_get", title="", a_text="Беги, гномик, они тебя убьют. Гномик беги.", icon="images/GERB.png")
     return

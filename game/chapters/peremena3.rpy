@@ -55,11 +55,13 @@ label peremena3_start:
     jump chapter4_start
 
 label peremena3_go:
+    play music "main_theme.mp3"
     show corridor2 with fade:
             fit "contain"
     narrator "Надо быстрее добраться до раздевалки." (what_slow_cps=25)
     
     show nurik:
+        zoom 0.3
         xalign -1.0 yalign 1.0
         linear 3 xalign 1.5 yalign 1.0
    
@@ -73,25 +75,32 @@ label peremena3_go:
     show maksimova at right_side
     Maks "Группа?" (what_slow_cps=25)
     narrator "Вот и закончилась светлая полоса его жизни." (what_slow_cps=25)
+    play music "do-not-open.mp3"
     menu:
         "Кто не рискует, тот сидит 5 пар":
+            play sound "savepoint.mp3"
             hide maksimova
             scene maks_scary:
                 fit "contain"
-            show nurik at left_side
+            show nurik at left_side1
             N "24ИС1-2" (what_slow_cps=25)
+            $ rep -= 1
             narrator "Нурик совершал много ошибок в своей жизни, и решение назвать случайную группу - самая глупая из них." (what_slow_cps=25)
             narrator "Бедному студентику не повезло из всех выбрать ту, которую курирует Татьяна Викторовна" (what_slow_cps=25)
         "Честность - залог успеха":
+            play sound "savepoint.mp3"
             hide maksimova
             scene maks_scary:
                 fit "contain"
-            show nurik at left_side
+            show nurik at left_side1
             N "23ИС2-2" (what_slow_cps=25)
+            
             narrator "Нурика учили никогда не врать! Примерный каракалпакский мальчик." (what_slow_cps=25)
     scene maks_lazer:
         fit "contain"
     narrator "Из глаз Татьяны Викторовны летят лазеры." (what_slow_cps=25)
+    hide nurik
+    show nurik_sad at left_side1 with dissolve
     narrator "Более находчивый студент давно бы убежал, но Нурик от страха только замер." (what_slow_cps=25)
     Maks "Быстро на пару!" (what_slow_cps=25)
     

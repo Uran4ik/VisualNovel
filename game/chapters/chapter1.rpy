@@ -30,20 +30,27 @@ define narrator = Character(
 
 define l = Character('Леша', color="#c8ffc8", what_slow_cps=20, window_style="window")
 define bus = Character('Автоинформатор', color="#c8ffc8", what_slow_cps=20, window_style="window")
-define N = Character('Нурик', image="nurik", what_slow_cps=20, window_style="window")
+define N = Character('Нурик',  what_slow_cps=20, window_style="window")
 
 # --- Изображения ---
 image kp_or_colledge = "bg/kp4.png"
 image kp_or_colledge2 = "bg/lool.png"
 image lesha = "characters/lesha.png"
-image nurik = "characters/nurik.png"
+image nurik = Transform("characters/nurik.png", zoom = 0.4 )
+image nurik_what = Transform("characters/nuric_what.png", zoom = 2)
+
 image lar_bejit = "characters/larionov_bejit.png"
 image black_back = "#000000"
 
 # --- Трансформы ---
 transform left_side:
     xalign 0.05
+    yalign 4.16
+
+transform left_side1:
+    xalign 0.05
     yalign 1.16
+    zoom 0.27
 
 transform right_side:
     xalign 0.95
@@ -52,7 +59,7 @@ transform right_side:
 # Начало игры
 label chapter1_start:
     scene black_back
-
+    
     call chapter1_bus_scene
     call chapter1_college_choice
         
@@ -65,17 +72,18 @@ label chapter1_start:
 
 # Сцена в автобусе
 label chapter1_bus_scene:
+    play music "main_theme.mp3"
     narrator "Родной автобус Е85 - единственный и неповторимый в своей красоте и удобстве, плавно замедляет свой ход." (what_slow_cps=30)
 
     narrator "Студенты разных учреждений района Орехово-Борисово, сонной толпой толпятся у выхода, нетерпеливо ожидая, пока двери откроются." (what_slow_cps=30)
         
     narrator "Через пару минут начнутся занятия." (what_slow_cps=30)
     narrator "И только один студент все еще остается безразличным...." (what_slow_cps=30)
-        
+    play sound bus
     bus "Остановка 'Седьмой микрорайон Орехово-Борисово', перед выходом не забывайте свои вещи..." (what_slow_cps=30)
     narrator "Нурик подскакивает." (what_slow_cps=30)
 
-    show nurik at left_side
+    show nurik_what at left_side
     N "(Язык хештегов),(язык хештегов), чуть не (язык хештегов) свою остановку!" (what_slow_cps=30)
     hide nurik with dissolve
         
@@ -90,7 +98,7 @@ label chapter1_college_choice:
     narrator "Ну, по крайней мере, он еще стоит."(what_slow_cps=30)
     narrator "С неохотой Нурик пытается вспомнить расписание, которое им уготовила администрация."(what_slow_cps=30)
 
-    show nurik at left_side 
+    show nurik at left_side1
     N "Емае, сегодня пять пар..." (what_slow_cps=25)
     hide nurik with dissolve
 
@@ -99,8 +107,10 @@ label chapter1_college_choice:
 
     menu:
         "Свальсировать с пар в Каширскую плазу.":
+            play sound "savepoint.mp3"
             jump chapter1_shopping_ending
         "Пойти в колледж.":
+            play sound "savepoint.mp3"
             jump chapter1_college_ending
         
     return
@@ -138,13 +148,13 @@ label chapter1_college_ending:
 
     narrator "Вдруг, мимо быстро, почти незаметно из-за своей скорости, проходит Дмитрий Ильич Ларионов." (what_slow_cps=30)
 
-    show nurik at left_side 
+    show nurik at left_side1
     N "Здра..." (what_slow_cps=25) 
     hide nurik with dissolve
 
     narrator "Дмитрий Ильич даже не повернулся.." (what_slow_cps=30)
 
-    show nurik at left_side 
+    show nurik at left_side1
     N "окак! Надо было сдавать фласку на первом курсе." (what_slow_cps=30)
     hide nurik with dissolve
 
@@ -152,10 +162,11 @@ label chapter1_college_ending:
     scene black_back with fade
     pause 1.0
 
+    play sound undertale
     # Подпись: "Глава 2"
-    show text "Глава 2" at truecenter with dissolve
+    show text "1 пара" at truecenter with dissolve
     pause 2.0
     hide text with dissolve
     pause 0.5
 
-    jump chapter2_start
+    jump para1_start

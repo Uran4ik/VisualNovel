@@ -1,80 +1,36 @@
-2025-05-23 07:40:01 UTC
+2025-05-26 18:18:34 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.7.25031702
 
-Early init took 0.06s
-Loading error handling took 0.03s
-Loading script took 0.24s
-Loading save slot metadata took 0.04s
+Early init took 0.08s
+Loading error handling took 0.04s
+Loading script took 0.38s
+Loading save slot metadata took 0.08s
 Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.03s
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\zhuma\\AppData\\Roaming/RenPy/backups\\VisualNovel':
-Dump and make backups took 0.06s
+Dump and make backups took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.05s
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
+Creating interface object took 0.02s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.88s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Xe Graphics'
-Version: b'4.6.0 - Build 31.0.101.4314'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 915.80s
-Loading error handling took 0.04s
-Loading script took 0.22s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
+Load screen analysis took 0.04s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.05s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.04s
 Running _start took 0.00s
-Interface start took 0.40s
+Interface start took 0.82s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -84,23 +40,42 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Xe Graphics'
 Version: b'4.6.0 - Build 31.0.101.4314'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Screen sizes: virtual=(1920, 1080) physical=(1509, 849) drawable=(1509, 849)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
-Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
 Resetting cache.
-Early init took 996.97s
-Loading error handling took 0.03s
-Loading script took 0.18s
-Loading save slot metadata took 0.03s
+Early init took 585.25s
+Loading error handling took 0.13s
+Loading script took 1.57s
+Loading save slot metadata took 0.26s
 Loading persistent took 0.00s
-Running init code took 0.04s
+Running init code took 0.17s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
+Reloading save slot metadata took 0.27s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\zhuma\\AppData\\Roaming/RenPy/backups\\VisualNovel':
-Dump and make backups took 0.06s
+Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.07s
@@ -111,14 +86,14 @@ Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
+Load screen analysis took 0.01s
+Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.41s
+Interface start took 0.46s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -128,32 +103,19 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Xe Graphics'
 Version: b'4.6.0 - Build 31.0.101.4314'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Screen sizes: virtual=(1920, 1080) physical=(1509, 849) drawable=(1509, 849)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/chapters/chapter1.rpy", line 57, in script call
-    call chapter1_college_choice
-  File "game/chapters/peremena3.rpy", line 55, in script
-    jump chapter4
-  File "C:\Users\zhuma\renpy-8.3.7-sdk\renpy\ast.py", line 1712, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\zhuma\renpy-8.3.7-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'chapter4'.
-
-While running game code:
-  File "game/chapters/chapter1.rpy", line 57, in script call
-    call chapter1_college_choice
-  File "game/chapters/peremena3.rpy", line 55, in script
-    jump chapter4
-ScriptError: could not find label 'chapter4'.
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
 Resetting cache.
-Early init took 1012.58s
+Early init took 677.86s
 Loading error handling took 0.02s
-Loading script took 0.14s
+Loading script took 0.15s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.03s
@@ -162,7 +124,49 @@ Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\zhuma\\AppData\\Roaming/RenPy/backups\\VisualNovel':
-Dump and make backups took 0.05s
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.29s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.4314'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1509, 849) drawable=(1509, 849)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1053.52s
+Loading error handling took 0.02s
+Loading script took 0.29s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\zhuma\\AppData\\Roaming/RenPy/backups\\VisualNovel':
+Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.08s
@@ -176,11 +180,11 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.09s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.38s
+Interface start took 0.37s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -190,25 +194,21 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Xe Graphics'
 Version: b'4.6.0 - Build 31.0.101.4314'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Screen sizes: virtual=(1920, 1080) physical=(1509, 849) drawable=(1509, 849)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1143.87s
+Early init took 1093.24s
 Loading error handling took 0.02s
-Loading script took 0.14s
-Loading save slot metadata took 0.02s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\zhuma\\AppData\\Roaming/RenPy/backups\\VisualNovel':
-Dump and make backups took 0.05s
+Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.07s
@@ -220,13 +220,13 @@ Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
+Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.08s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.02s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.41s
+Interface start took 0.35s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -236,5 +236,257 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Xe Graphics'
 Version: b'4.6.0 - Build 31.0.101.4314'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1731, 974) drawable=(1731, 974)
+Screen sizes: virtual=(1920, 1080) physical=(1509, 849) drawable=(1509, 849)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1113.09s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\zhuma\\AppData\\Roaming/RenPy/backups\\VisualNovel':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.32s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.4314'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1509, 849) drawable=(1509, 849)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1128.55s
+Loading error handling took 0.01s
+Loading script took 0.20s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\zhuma\\AppData\\Roaming/RenPy/backups\\VisualNovel':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.40s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.4314'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1509, 849) drawable=(1509, 849)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1143.86s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\zhuma\\AppData\\Roaming/RenPy/backups\\VisualNovel':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.39s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.4314'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1509, 849) drawable=(1509, 849)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1165.23s
+Loading error handling took 0.02s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\zhuma\\AppData\\Roaming/RenPy/backups\\VisualNovel':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.42s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.4314'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1509, 849) drawable=(1509, 849)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1176.34s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\zhuma\\AppData\\Roaming/RenPy/backups\\VisualNovel':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.37s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.4314'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1509, 849) drawable=(1509, 849)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1192.04s
+Loading error handling took 0.02s
+Loading script took 0.13s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\zhuma\\AppData\\Roaming/RenPy/backups\\VisualNovel':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.36s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.4314'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1509, 849) drawable=(1509, 849)
 Maximum texture size: 4096x4096

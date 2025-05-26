@@ -1,4 +1,14 @@
 
+define girl1 = Character('Незнакомая девушка')
+define emelina = Character('Елена Ивановна')
+define dev = Character('Волосатый разраб')
+define stud1 = Character('Недовольный одногруппник')
+define stud2 = Character('Раздосадованный одногрурпник')
+define stud3 = Character('Настойчивый одногруппник')
+define stud4 = Character('(Язык хештегов) одногруппник')
+define polina = Character('Полина')
+image polina = Transform( "characters/polina.png", zoom = 0.8)
+
 init python:
     
     import os
@@ -87,15 +97,19 @@ screen game:
                     action []
 
 
+transform zoom1:
+    zoom 1.5
+    xalign 0.95
+    yalign 1.0
+
 label chapter2_start:
     scene black_back
     play sound "undertale.mp3"
-    show text "{color=#ffffff}Глава 3: Кульминация{/color}" at truecenter with dissolve
 
     pause 3.0
 
     hide text with dissolve
-    show text "{color=#ffffff}103 кабинет{/color}" at truecenter with dissolve
+    show text "{color=#ffffff}2 пара{/color}" at truecenter with dissolve
 
     pause 3.0
 
@@ -108,34 +122,43 @@ label chapter2_start:
 
     girl1 "…и именно поэтому я считаю, что (язык хештегов) в общественном месте – это норма."(what_slow_cps=40)
 
-    show nurik at left with moveinleft
+    show nurik at left_side1
 
     narrator "Все аплодируют. Нурик все еще стоит в дверях, пытаясь понять, что здесь происходит."(what_slow_cps=40)
-    narrator "Студенты другой группы улыбаются, принимая овации.)"(what_slow_cps=40)
+    narrator "Студенты другой группы улыбаются, принимая овации."(what_slow_cps=40)
     narrator "Все, кажется, слишком вовлечены в необычное мероприятие, чтобы заметить его опоздание."(what_slow_cps=40)
 
     scene em kab2 with dissolve
 
-    show nurik at right with moveinright
+    show nurik at left_side1
 
     narrator "Нурик садится за свое место и открывает ноутбук."(what_slow_cps=40)
     narrator "Никто бы не мог подумать, но оказывается, тесты на айкью слишком энергозатратны."(what_slow_cps=40)
 
-    N "(Нужно зарядить ноутбук.)"(what_slow_cps=40)
+    N "Нужно зарядить ноутбук."(what_slow_cps=40)
+    narrator "Вот совпадение! Такая мысль пришла и половине группы."(what_slow_cps=40)
 
     narrator "Колледж Царицыно на саперов никого не обучал, но распутывание проводов – приобретенный софт скилл."(what_slow_cps=40)
 
-    narrator "Нурик долго и мучительно распутывает провода"
+    scene black_back with fade
+    pause 1.0
+
+    # Подпись: "Глава 2"
+    show text "Нурик долго и мучительно распутывает провода." at truecenter with dissolve
+    pause 2.0
+    hide text with dissolve
+    pause 0.5
+    
 
     scene em kab2
 
-    show emel with dissolve
+    show emel at right_side with dissolve
 
     emelina "Задание я скинула в группу. Тем, у кого точки – нужно доделать девятую практическую до завтра."(what_slow_cps=40)
 
     hide emel with dissolve
 
-    show nurik at left with moveinleft
+    show nurik at left_side1
 
     narrator "Гул недовольства охватывает аудиторию."(what_slow_cps=40)
     narrator "Вторая пара тоже еще слишком рано для настоящей работы. К тому же, в аудитории душно."(what_slow_cps=40)
@@ -149,7 +172,9 @@ label chapter2_start:
 
     narrator "Нелегко быть студентом."(what_slow_cps=40)
     narrator "Несчастный работяга встает, чтобы открыть окно – но вот загвоздка. Ручки от окна нигде нет."(what_slow_cps=40)
-    scene em kab2
+  
+    scene em kab2 
+ 
     $ InitGame("em kab2", 120, (715, 660), "handle")
     $ StartGame()
     hide nurik
@@ -157,7 +182,7 @@ label chapter2_start:
     N "Я нашёл ручку"
 
     hide handly with dissolve
-    show nurik at left with moveinleft
+    show nurik at left_side1
 
     narrator "Найдя ручку Нурик открыл окно."(what_slow_cps=40)
     narrator "Погода на улице хорошая. Прохлада наполняет кабинет и даже работать становится легче."(what_slow_cps=40)
@@ -170,28 +195,32 @@ label chapter2_start:
     narrator "Как обычно, нелегкая доля выпадает Нурику. Ну, по крайней мере сейчас то ручку искать не придется."(what_slow_cps=40)
     narrator "Кто-то явно согласен с общепринятой точкой зрения, потому что ручка вновь пропала."(what_slow_cps=40)
 
-    show polina photo at right with moveinright
+    show small_polina at zoom1
     
     polina "Домовой-домовой, поиграл и отдай."(what_slow_cps=40)
 
     narrator "Если бы это работало именно так, то стипендия приходила бы вовремя."(what_slow_cps=40)
     scene em kab2
+    
     $ InitGame("poisk", 120, (500, 550), "handle2")
     $ StartGame()
-    hide polina photo
+    hide polina 
     hide nurik
     show handly with dissolve
     N "Я нашёл ручку"
     hide handly with dissolve
-    show nurik at left with moveinleft
+    show nurik at left_side1
 
-    narrator "Найдя ручку Нурик открыл закрыл."(what_slow_cps=40)
-
+    narrator "Найдя ручку Нурик закрыл окно."(what_slow_cps=40)
+    play sound "xbox.mp3"
+    $ renpy.call_screen("scr_achievement_get", title="", a_text="Жизнь в коллективе", icon="GERB.png")
+    scene black_back with fade
+    pause 1.0
     scene em kab1
 
     narrator "Голодные студентики слезно умоляют Елену Ивановну отпустить их пораньше в столовую."(what_slow_cps=40)
 
-    show emel at right with moveinright
+    show emel at right_side
 
     emelina "Ну ладно, идите… Так вот, в Калязине очень интересно посмотреть на-"(what_slow_cps=40)
 

@@ -4,4 +4,4 @@ label bad_ending:
     narrator "Теперь он работает барменом в Подольске..." (what_slow_cps=30)
     narrator "ПЛОХАЯ КОНЦОВКА" (what_slow_cps=40)
 
-    $ renpy.full_restart()
+    jump titr_start
