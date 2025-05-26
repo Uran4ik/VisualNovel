@@ -179,7 +179,7 @@ label chapter2_start:
     narrator "Как обычно, нелегкая доля выпадает Нурику. Ну, по крайней мере сейчас то ручку искать не придется."(what_slow_cps=40)
     narrator "Кто-то явно согласен с общепринятой точкой зрения, потому что ручка вновь пропала."(what_slow_cps=40)
 
-    show polina photo at right_side with moveinright
+    show polina at right_side with moveinright
     
     polina "Домовой-домовой, поиграл и отдай."(what_slow_cps=40)
 
