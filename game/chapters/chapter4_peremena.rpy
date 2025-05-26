@@ -31,6 +31,7 @@ image bg background = im.Scale("bg/lesson_larionov/bacground.jpg", 1920, 1080)
 image bg vih = im.Scale("bg/lesson_larionov/vih.jpg", 1920, 1080)
 image bg poteryalsya = im.Scale("bg/lesson_larionov/poteryalsya.jpg", 1920, 1080)
 image bg exit = im.Scale("bg/lesson_larionov/exit.jpg", 1920, 1080)
+image bg smirnov_kab = im.Scale("bg/lesson_larionov/smirnov_kab.png", 1920, 1080)
 
 transform center_right:
     xalign 0.75 
@@ -235,13 +236,13 @@ label maze_game:
 
 label maze_complete:
     window show
-    "Нурик нашел выход из лабиринта за [maze.steps] шагов!"
+    "Нурик нашел выход из 116 за [maze.steps] шагов!"
     return
 
 label maze_timeout:
     window show
     show nurik at center
-    N "Время вышло! Придется начинать сначала..."
+    N "Время вышло! Придется искать выход снова..."
     hide nurik
     jump maze_game
 

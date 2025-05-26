@@ -141,17 +141,21 @@ init python:
                 if self.milliseconds > 1000:
                     self.countdown -= 1
                     self.milliseconds = 0
-                
-                self.milliseconds += self.clock.tick_busy_loop(60)
-                if self.countdown <= 0:
+
+                    
+    self.milliseconds += self.clock.tick_busy_loop(60)
+                if self.countdown <= 0:303
                     self.gameover = True
+                    # Проверяем количество очков
+                    if self.player.score < 50:
+                        renpy.store.rep -= 1
                 
                 del self.debug[:]
                 self.debug.append("Отладка")
                 self.debug.append("Случайный: " + str(chance))
-                self.debug.append("Положение Собаки: " + str(self.player.position[0]) + ", " + str(self.player.position[1]))
+                self.debug.append("Положение Нурика: " + str(self.player.position[0]) + ", " + str(self.player.position[1]))
                 for fish in self.fish:
-                    self.debug.append("Положение рыбы: " + str(fish.position[0]) + ", " + str(fish.position[1]) + ", Active: " + str(fish.active))
+                    self.debug.append("Положение мцд: " + str(fish.position[0]) + ", " + str(fish.position[1]) + ", Active: " + str(fish.active))
                 self.debug.append("Дэльта: " + str(delta))
                 
         def render(self, width, height, shownTimebase, animationTimebase):
